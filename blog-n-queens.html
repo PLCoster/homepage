@@ -68,7 +68,7 @@
               <img class="blog-img center" src="assets/Blog/n_queens1.png" alt="A standard chessboard with 8 queens placed such that they can't take one another">
               <p class="blog-img-text">Fig. 1: One of 92 possible solutions for the 8-Queens Puzzle</p>
 
-              <p> These posts will be broken in to several sections, answering different questions:
+              <p> These posts will be broken in to several sections, covering different aspects of the problem:
                 <ol>
                   <li><strong>What is the scaling of the N-Queens puzzle with N?</strong></li>
                   <li><strong>For a board of size N, how many solutions to the puzzle are there?</strong></li>
@@ -78,7 +78,7 @@
               <hr>
 
               <h3>1. What is the scaling of the N-Queens puzzle with N?</h3>
-              <p>We can start to get an idea of the scaling of the N-Queens problem using combinatorics. Given N Queens and an NxN chessboard to place them on, how many ways can the queens be placed? The first Queen we try to place has N&sup2; positions it can be placed, the second has (N&sup2; - 1) positions etc., until we try to place the Nth queen which has (N&sup2; - (N - 1)) positions it can be placed. This gives us </p>
+              <p>We can start to get an idea of the scaling of the N-Queens problem using combinatorics. Given N Queens and an NxN chessboard to place them on, how many ways can the queens be placed? The first Queen we try can be placed in N&sup2; positions, the second has (N&sup2; - 1) positions etc., until we try to place the Nth queen which has (N&sup2; - (N - 1)) positions it can be placed. This gives us </p>
               <p><strong> N&sup2; *  (N&sup2; - 1) * (N&sup2; - 2) * ... * (N&sup2; - (N - 1)) </strong></p>
               <p>possible positions. Using factorials, this can be simplified to:</p>
               <p><strong>(N&sup2;)! / (N&sup2;-N)!</strong></p>
@@ -185,12 +185,13 @@
 
               <p>Table 1: Information on the number of possible queen placements, 'fundamental' and 'all' solutions to the N-Queens problem for various values of N. Note that 'Fundamental' solutions in the table above are all unique solutions to the N-queens problem that are not related by symmetry (since some solutions can be related by reflection or rotational symmetry). The 'All' solutions column counts all possible solutions, even if related by symmetry to another solution</p>
 
-              <p>As can be seen from Table 1 above, the total number of possible board positions increases at an incredible rate as N increases. In fact, it is easy to show that the scaling of the problem is <strong><em>O </em>(N<sup>2N</sup>)</strong>, as each queen we place on the board has approximately N<sup>2</sup> positions to be placed in, and we have N queens to place. In fact we shall see later that even when we simplifly the puzzle by removing some degrees of freedom for the queens, that the scaling of the puzzle will still be <strong><em>O </em>(N<sup>N</sup>)</strong> This is one of the worst possible scalings for an algorithm, its growth rate (green line) is compared to some other common algorithm time complexities in Fig 2. below:</p>
+              <p>As can be seen from Table 1 above, the total number of possible board positions increases at an incredible rate as N increases. In fact, it is easy to show that the scaling of the problem is <strong><em>O </em>(N<sup>2N</sup>)</strong>, as each queen we place on the board has approximately N<sup>2</sup> positions to be placed in, and we have N queens to place. In fact we shall see later that even when we simplifly the puzzle by removing some degrees of freedom for the queens, that the scaling of the puzzle will still be <strong><em>O </em>(N<sup>N</sup>)</strong> This is one of the worst possible scalings for an algorithm; its growth rate (green line) is compared to some other common computational time complexities in Fig 2. below:</p>
 
               <img class="blog-img center" src="assets/Blog/n_queens2.png" alt="Plot of various algorithmic time complexities against increasing input size n">
-              <p class="blog-img-text">Fig. 2: Plot of various algorithmic time complexities vs. input size (n)</p>
+              <p class="blog-img-text">Fig. 2: Plot of Number of Operations vs. input size (n) for several common computational time complexities.</p>
 
-              <p>Unfortunately, there is no known formula for the exact number of solutions for a given value of N - in order to find the number of solutions, all valid board positions must be generated. In the next section of this post we will write a simple algorithm to do this, which utilises recursion and backtracking to generate valid board positions.</p>
+              <p>Unfortunately, there is no known formula for the exact number of solutions for a given value of N - in order to find the number of solutions, all valid board positions must be generated. This is one of the reasons why the total number of solutions has only been solved to N=27; when 1.2 e+77 board arrangments must be checked this takes a long time. Even when using multiple processors in parallel to independently solve subsections of the problem, it is mentioned by the <a href="https://github.com/preusser/q27">programmers that solved N=27</a> that around one eighth of the solutions were found by running their algorithm for <strong>more than a year(!)</strong>. Hence any algorithm we implement here will only be practically useful to find the complete set of solutions for N &lt;&lt; 27.</p>
+              <p>In the next section of this post we will write a simple algorithm to do this, which utilises recursion and backtracking to generate valid board positions.</p>
 
               <hr>
 
