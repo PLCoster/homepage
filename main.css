@@ -189,6 +189,13 @@ p.tech-icons {
   font-size: 24px;
 }
 
+.tech-icons img {
+  display: inline-block;
+  max-height: 25px;
+  max-width: 25px;
+  padding-bottom: 3px;
+}
+
 /*
 =============================
 RESPONSIVE
