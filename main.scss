@@ -15,10 +15,10 @@
   SASS Variables
   ========================================
 */
-$primary-col: #273E47;
-$background-col: #E9ECEF;
-$highlight-col: #DFA95F;
-$highlight-hov: #EDE6D1;
+$primary-col: #273e47;
+$background-col: #e9ecef;
+$highlight-col: #dfa95f;
+$highlight-hov: #ede6d1;
 
 /*
   ========================================
@@ -28,10 +28,14 @@ $highlight-hov: #EDE6D1;
 body {
   background-color: $background-col;
   color: $primary-col;
-  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 16px/22px 'Lato', 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: $primary-col;
 }
 
@@ -54,14 +58,14 @@ strong {
   font-weight: 400;
 }
 
-cite, em {
+cite,
+em {
   font-style: italic;
 }
 
 .text-muted {
-  color:  $primary-col;
+  color: $primary-col;
 }
-
 
 /*
 ==========================
@@ -107,7 +111,6 @@ JUMBOTRON
   border: 1px gray solid;
 }
 
-
 /*
 ==========================
 FOOTER
@@ -136,7 +139,7 @@ BUTTONS
 
 .btn-primary {
   color: $highlight-col;
-  background-color:  $primary-col;
+  background-color: $primary-col;
   border-color: $primary-col;
 }
 
@@ -144,8 +147,6 @@ BUTTONS
   @extend .btn-primary;
   color: $highlight-hov;
 }
-
-
 
 .new-nick {
   margin-bottom: 20px;
@@ -161,10 +162,10 @@ table.table {
   margin-bottom: 5px;
 }
 
-th, td {
+th,
+td {
   font-size: 12px;
   line-height: 12px;
-
 }
 
 /*
@@ -187,7 +188,8 @@ BLOG
   border: 1px gray solid;
 }
 
-img.blog-img + p, table + p {
+img.blog-img + p,
+table + p {
   font-size: 12px;
   font-weight: 700;
   text-align: center;
@@ -212,6 +214,10 @@ p.tech-icons {
   padding-bottom: 3px;
 }
 
+.tech-icons img.larger {
+  max-height: 30px;
+}
+
 /*
 =============================
 RESPONSIVE
@@ -219,8 +225,8 @@ RESPONSIVE
 */
 
 @media print {
-  .nickname-gen{
-    display:none;
+  .nickname-gen {
+    display: none;
   }
 }
 
@@ -230,5 +236,3 @@ RESPONSIVE
     min-width: 300px;
   }
 }
-
-

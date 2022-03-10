@@ -20,13 +20,16 @@
   ========================================
 */
 body {
-  background-color: #E9ECEF;
-  color: #273E47;
+  background-color: #e9ecef;
+  color: #273e47;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4 {
-  color: #273E47;
+h1,
+h2,
+h3,
+h4 {
+  color: #273e47;
 }
 
 h1 {
@@ -51,12 +54,13 @@ strong {
   font-weight: 400;
 }
 
-cite, em {
+cite,
+em {
   font-style: italic;
 }
 
 .text-muted {
-  color: #273E47;
+  color: #273e47;
 }
 
 /*
@@ -66,15 +70,15 @@ NAVBAR
 */
 #navbar {
   font-weight: 400;
-  background-color: #273E47;
+  background-color: #273e47;
 }
 
 #logo {
-  color: #DFA95F;
+  color: #dfa95f;
 }
 
 #logo:hover {
-  color: #EDE6D1;
+  color: #ede6d1;
 }
 
 /*
@@ -106,8 +110,8 @@ FOOTER
 ==========================
 */
 #footer {
-  color: #DFA95F;
-  background-color: #273E47;
+  color: #dfa95f;
+  background-color: #273e47;
 }
 
 /*
@@ -125,13 +129,13 @@ BUTTONS
 ===========================
 */
 .btn-primary, .btn-primary:hover {
-  color: #DFA95F;
-  background-color: #273E47;
-  border-color: #273E47;
+  color: #dfa95f;
+  background-color: #273e47;
+  border-color: #273e47;
 }
 
 .btn-primary:hover {
-  color: #EDE6D1;
+  color: #ede6d1;
 }
 
 .new-nick {
@@ -147,7 +151,8 @@ table.table {
   margin-bottom: 5px;
 }
 
-th, td {
+th,
+td {
   font-size: 12px;
   line-height: 12px;
 }
@@ -171,7 +176,8 @@ BLOG
   border: 1px gray solid;
 }
 
-img.blog-img + p, table + p {
+img.blog-img + p,
+table + p {
   font-size: 12px;
   font-weight: 700;
   text-align: center;
@@ -193,6 +199,10 @@ p.tech-icons {
   display: inline-block;
   max-height: 25px;
   padding-bottom: 3px;
+}
+
+.tech-icons img.larger {
+  max-height: 30px;
 }
 
 /*
