@@ -1,357 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <!--Bootstrap, StyleSheets and Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="main.css">
-      <!-- Favicons -->
-      <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-      <link rel="manifest" href="assets/favicons/site.webmanifest">
-      <!-- Page Title -->
-      <title>PLCoster's CS50AI Projects</title>
-    </head>
-    <body>
-      <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
-          <a class="navbar-brand" id="logo" href="index.html">Paul L. Coster </a>
-          <!--Navbar buttons-->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!--Bootstrap, StyleSheets and Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+    <!-- Page Title -->
+    <title>PLCoster's CS50AI Projects</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
+        <a class="navbar-brand" id="logo" href="index.html">Paul L. Coster </a>
+        <!--Navbar buttons-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
-          </button>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="projects.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href=https://github.com/PLCoster><i class="fab fa-github"></i> Github</a>
-              </li>
-              <li class="nav-item" id="test">
-                <a class="nav-link" href="https://uk.linkedin.com/in/paul-coster-a29b3948"><i class="fab fa-linkedin"> </i> LinkedIn</a>
-              </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/PLCoster"
+                ><i class="fab fa-github"></i> Github</a
+              >
+            </li>
+            <li class="nav-item" id="test">
+              <a
+                class="nav-link"
+                href="https://uk.linkedin.com/in/paul-coster-a29b3948"
+                ><i class="fab fa-linkedin"> </i> LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--Main Page Content-->
+
+    <main role="main">
+      <section class="jumbotron text-left">
+        <div class="container">
+          <h1>CS50 AI Projects</h1>
+          <p class="lead">
+            Here are some of the projects I have completed for
+            <a
+              href="https://www.edx.org/course/cs50s-introduction-to-artificial-intelligence-with-python"
+              >Harvard's CS50 Introduction to Artificial Intelligence with
+              Python</a
+            >:
+          </p>
+          <p>
+            <a href="projects.html" class="btn btn-primary my-2"
+              >Back to All Projects</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5">
+        <!-- CS50 AI Projects  -->
+        <div class="container">
+          <h2>Search Algorithms</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="assets/Projects/cs50ai/degrees.png"
+                  class="card-img-top"
+                  alt="CS50 AI Degrees Image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Degrees</h3>
+                  <p class="card-text">
+                    Implementation of a Breadth-First Search Algorithm to find
+                    the degrees of separation between two selected actors, by
+                    films they have starred in.
+                  </p>
+                  <p class="tech-icons"><i class="fab fa-python"></i></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://youtu.be/yk_eLo4vXqk"
+                        class="btn btn-primary my-2"
+                      >
+                        <i class="fab fa-youtube"></i> Demo
+                      </a>
+                    </div>
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/PLCoster/cs50ai-week0-degrees"
+                        class="btn btn-primary my-2"
+                        ><i class="fab fa-github"></i> Source Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="assets/Projects/cs50ai/tictactoe.png"
+                  class="card-img-top"
+                  alt="CS50 AI TicTacToe Image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Tic Tac Toe</h3>
+                  <p class="card-text">
+                    Implementation of a Tic Tac Toe AI using a Minimax Algorithm
+                    with Alpha-Beta pruning. Randomisation varies the AI's moves
+                    where several have equal utility.
+                  </p>
+                  <p class="tech-icons"><i class="fab fa-python"></i></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://youtu.be/wEpcmVQ2US4"
+                        class="btn btn-primary my-2"
+                      >
+                        <i class="fab fa-youtube"></i> Demo
+                      </a>
+                    </div>
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/PLCoster/cs50ai-week0-tictactoe"
+                        class="btn btn-primary my-2"
+                        ><i class="fab fa-github"></i> Source Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </nav>
-      </header>
+          <hr />
+          <h2>Knowledge</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="assets/Projects/cs50ai/knights.png"
+                  class="card-img-top"
+                  alt="CS50 AI Knights Image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Knights</h3>
+                  <p class="card-text">
+                    Solutions to 'Knights and Knaves' style logic puzzles using
+                    Propositional Logic and Model Checking.
+                  </p>
+                  <br />
+                  <p class="tech-icons"><i class="fab fa-python"></i></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://www.youtube.com/watch?v=Exrwm2OrTko"
+                        class="btn btn-primary my-2"
+                      >
+                        <i class="fab fa-youtube"></i> Demo
+                      </a>
+                    </div>
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/PLCoster/cs50ai-week1-knights"
+                        class="btn btn-primary my-2"
+                        ><i class="fab fa-github"></i> Source Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      <!--Main Page Content-->
-
-      <main role="main">
-
-        <section class="jumbotron text-left ">
-          <div class="container">
-            <h1>CS50 AI Projects</h1>
-            <p class="lead">Here are some of the projects I have completed for <a href="https://www.edx.org/course/cs50s-introduction-to-artificial-intelligence-with-python">Harvard's CS50 Introduction to Artificial Intelligence with Python</a>:</p>
-            <p>
-              <a href="projects.html" class="btn btn-primary my-2">Back to All Projects</a>
-            </p>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="assets/Projects/cs50ai/minesweeper.png"
+                  class="card-img-top"
+                  alt="CS50 AI Minesweeper Image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Minesweeper</h3>
+                  <p class="card-text">
+                    An AI that plays the classic Windows 'Minesweeper' game,
+                    using a knowledge base and inference to generate new
+                    knowledge about the game state.
+                  </p>
+                  <p class="tech-icons"><i class="fab fa-python"></i></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://youtu.be/PW1k7TWhvuY"
+                        class="btn btn-primary my-2"
+                      >
+                        <i class="fab fa-youtube"></i> Demo
+                      </a>
+                    </div>
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/PLCoster/cs50ai-week1-minesweeper"
+                        class="btn btn-primary my-2"
+                        ><i class="fab fa-github"></i> Source Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
-
-        <div class="album py-5">
-          <!-- CS50 AI Projects  -->
-          <div class="container">
-            <h2>Search Algorithms</h2>
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card mb-4 shadow-sm">
-                  <img src="assets/Projects/cs50ai/degrees.png" class="card-img-top" alt="CS50 AI Degrees Image">
-                  <div class="card-body">
-                    <h3 class="card-title">Degrees</h3>
-                    <p class="card-text">Implementation of a Breadth-First Search Algorithm to find the degrees of separation between two selected actors, by films they have starred in.</p>
-                    <p class="tech-icons"><i class="fab fa-python"></i></p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="https://youtu.be/yk_eLo4vXqk" class="btn btn-primary my-2">
-                          <i class="fab fa-youtube"></i>  Demo
-                        </a>
-                      </div>
-                      <div class="btn-group">
-                        <a href="https://github.com/PLCoster/cs50ai-week0-degrees" class="btn btn-primary my-2"><i class="fab fa-github"></i>  Source Code </a>
-                      </div>
+          <hr />
+          <h2>Uncertainty</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="assets/Projects/cs50ai/pagerank.png"
+                  class="card-img-top"
+                  alt="CS50 AI PageRank Image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Pagerank</h3>
+                  <p class="card-text">
+                    An AI that ranks web pages by importance - similar to the
+                    Google PageRank AI - using both a Random Surfer Model and an
+                    Iterative Algorithm.
+                  </p>
+                  <br />
+                  <p class="tech-icons"><i class="fab fa-python"></i></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://www.youtube.com/watch?v=e76D3yuUNZU"
+                        class="btn btn-primary my-2"
+                      >
+                        <i class="fab fa-youtube"></i> Demo
+                      </a>
+                    </div>
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/PLCoster/cs50ai-week2-pagerank"
+                        class="btn btn-primary my-2"
+                        ><i class="fab fa-github"></i> Source Code
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card mb-4 shadow-sm">
-                  <img src="assets/Projects/cs50ai/tictactoe.png" class="card-img-top" alt="CS50 AI TicTacToe Image">
-                  <div class="card-body">
-                    <h3 class="card-title">Tic Tac Toe</h3>
-                    <p class="card-text">Implementation of a Tic Tac Toe AI using a Minimax Algorithm with Alpha-Beta pruning. Randomisation varies the AI's moves where several have equal utility.</p>
-                    <p class="tech-icons"><i class="fab fa-python"></i></p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="https://youtu.be/wEpcmVQ2US4" class="btn btn-primary my-2">
-                          <i class="fab fa-youtube"></i>  Demo
-                        </a>
-                      </div>
-                      <div class="btn-group">
-                        <a href="https://github.com/PLCoster/cs50ai-week0-tictactoe" class="btn btn-primary my-2"><i class="fab fa-github"></i>  Source Code </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <hr>
-            <h2>Knowledge</h2>
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card mb-4 shadow-sm">
-                  <img src="assets/Projects/cs50ai/knights.png" class="card-img-top" alt="CS50 AI Knights Image">
-                  <div class="card-body">
-                    <h3 class="card-title">Knights</h3>
-                    <p class="card-text">Solutions to 'Knights and Knaves' style logic puzzles using Propositional Logic and Model Checking.</p>
-                    <br>
-                    <p class="tech-icons"><i class="fab fa-python"></i></p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="https://www.youtube.com/watch?v=Exrwm2OrTko" class="btn btn-primary my-2">
-                          <i class="fab fa-youtube"></i>  Demo
-                        </a>
-                      </div>
-                      <div class="btn-group">
-                        <a href="https://github.com/PLCoster/cs50ai-week1-knights" class="btn btn-primary my-2"><i class="fab fa-github"></i>  Source Code </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card mb-4 shadow-sm">
-                  <img src="assets/Projects/cs50ai/minesweeper.png" class="card-img-top" alt="CS50 AI Minesweeper Image">
-                  <div class="card-body">
-                    <h3 class="card-title">Minesweeper</h3>
-                    <p class="card-text">An AI that plays the classic Windows 'Minesweeper' game, using a knowledge base and inference to generate new knowledge about the game state.</p>
-                    <p class="tech-icons"><i class="fab fa-python"></i></p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="https://youtu.be/PW1k7TWhvuY" class="btn btn-primary my-2">
-                          <i class="fab fa-youtube"></i>  Demo
-                        </a>
-                      </div>
-                      <div class="btn-group">
-                        <a href="https://github.com/PLCoster/cs50ai-week1-minesweeper" class="btn btn-primary my-2"><i class="fab fa-github"></i>  Source Code </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <hr>
-            <h2>Uncertainty</h2>
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card mb-4 shadow-sm">
-                  <img src="assets/Projects/cs50ai/pagerank.png" class="card-img-top" alt="CS50 AI PageRank Image">
-                  <div class="card-body">
-                    <h3 class="card-title">Pagerank</h3>
-                    <p class="card-text">An AI that ranks web pages by importance - similar to the Google PageRank AI - using both a Random Surfer Model and an Iterative Algorithm. </p>
-                    <br>
-                    <p class="tech-icons"><i class="fab fa-python"></i></p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="https://www.youtube.com/watch?v=e76D3yuUNZU" class="btn btn-primary my-2">
-                          <i class="fab fa-youtube"></i>  Demo
-                        </a>
-                      </div>
-                      <div class="btn-group">
-                        <a href="https://github.com/PLCoster/cs50ai-week2-pagerank" class="btn btn-primary my-2"><i class="fab fa-github"></i>  Source Code </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card mb-4 shadow-sm">
-                  <img src="assets/Projects/cs50ai/heredity.png" class="card-img-top" alt="CS50 AI Heredity Image">
-                  <div class="card-body">
-                    <h3 class="card-title">Heredity</h3>
-                    <p class="card-text">An AI that predicts the likelihood of members of a family having a 0, 1, or 2 copies of a gene, and a trait caused by that gene, using a Bayesian Network and Inference by Enumeration.</p>
-                    <p class="tech-icons"><i class="fab fa-python"></i></p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="https://youtu.be/Hq4lpH_DNaE" class="btn btn-primary my-2">
-                          <i class="fab fa-youtube"></i>  Demo
-                        </a>
-                      </div>
-                      <div class="btn-group">
-                        <a href="https://github.com/PLCoster/cs50ai-week2-heredity" class="btn btn-primary my-2"><i class="fab fa-github"></i>  Source Code </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <hr>
-            <h2>Optimisation</h2>
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card mb-4 shadow-sm">
-                  <img src="assets/Projects/cs50ai/crossword.png" class="card-img-top" alt="CS50 AI Crossword Image">
-                  <div class="card-body">
-                    <h3 class="card-title">Crossword</h3>
-                    <p class="card-text">An AI that generates crossword puzzles, by treating the crossword generation as a constraint satisfaction problem and using a backtracking search algorithm.</p>
-                    <p class="tech-icons"><i class="fab fa-python"></i></p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="https://youtu.be/X71-WKXkxqQ" class="btn btn-primary my-2">
-                          <i class="fab fa-youtube"></i>  Demo
-                        </a>
-                      </div>
-                      <div class="btn-group">
-                        <a href="https://github.com/PLCoster/cs50ai-week3-crossword" class="btn btn-primary my-2"><i class="fab fa-github"></i>  Source Code </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
 
-            <hr>
-            <h2>Learning</h2>
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card mb-4 shadow-sm">
-                  <img src="assets/Projects/cs50ai/shopping.png" class="card-img-top" alt="CS50 AI Shopping Image">
-                  <div class="card-body">
-                    <h3 class="card-title">Shopping</h3>
-                    <p class="card-text">An AI that predicts whether online shopping customers will complete a purchase, using the Scikit-Learn k-Nearest Neighbour classifier on a customer dataset.</p>
-                    <br>
-                    <p class="tech-icons"><i class="fab fa-python"></i> <img src="assets/Icons/scikit-learn.png" style="height: 30px;"></p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="https://github.com/PLCoster/cs50ai-week4-shopping" class="btn btn-primary my-2"><i class="fab fa-github"></i>  Source Code </a>
-                      </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="assets/Projects/cs50ai/heredity.png"
+                  class="card-img-top"
+                  alt="CS50 AI Heredity Image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Heredity</h3>
+                  <p class="card-text">
+                    An AI that predicts the likelihood of members of a family
+                    having a 0, 1, or 2 copies of a gene, and a trait caused by
+                    that gene, using a Bayesian Network and Inference by
+                    Enumeration.
+                  </p>
+                  <p class="tech-icons"><i class="fab fa-python"></i></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://youtu.be/Hq4lpH_DNaE"
+                        class="btn btn-primary my-2"
+                      >
+                        <i class="fab fa-youtube"></i> Demo
+                      </a>
+                    </div>
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/PLCoster/cs50ai-week2-heredity"
+                        class="btn btn-primary my-2"
+                        ><i class="fab fa-github"></i> Source Code
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card mb-4 shadow-sm">
-                  <img src="assets/Projects/cs50ai/nim.png" class="card-img-top" alt="CS50 AI Nim Image">
-                  <div class="card-body">
-                    <h3 class="card-title">Nim</h3>
-                    <p class="card-text">An AI that teaches itself to play the game 'Nim' using Reinforcement Learning. A Q-Learning algorithm with ε-Greedy Decision Making is used to estimate the value of actions for game states.</p>
-                    <p class="tech-icons"><i class="fab fa-python"></i></p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="https://github.com/PLCoster/cs50ai-week4-nim" class="btn btn-primary my-2"><i class="fab fa-github"></i>  Source Code </a>
-                      </div>
+            </div>
+          </div>
+          <hr />
+          <h2>Optimisation</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="assets/Projects/cs50ai/crossword.png"
+                  class="card-img-top"
+                  alt="CS50 AI Crossword Image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Crossword</h3>
+                  <p class="card-text">
+                    An AI that generates crossword puzzles, by treating the
+                    crossword generation as a constraint satisfaction problem
+                    and using a backtracking search algorithm.
+                  </p>
+                  <p class="tech-icons"><i class="fab fa-python"></i></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://youtu.be/X71-WKXkxqQ"
+                        class="btn btn-primary my-2"
+                      >
+                        <i class="fab fa-youtube"></i> Demo
+                      </a>
+                    </div>
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/PLCoster/cs50ai-week3-crossword"
+                        class="btn btn-primary my-2"
+                        ><i class="fab fa-github"></i> Source Code
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
+          <hr />
+          <h2>Learning</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="assets/Projects/cs50ai/shopping.png"
+                  class="card-img-top"
+                  alt="CS50 AI Shopping Image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Shopping</h3>
+                  <p class="card-text">
+                    An AI that predicts whether online shopping customers will
+                    complete a purchase, using the Scikit-Learn k-Nearest
+                    Neighbour classifier on a customer dataset.
+                  </p>
+                  <br />
+                  <p class="tech-icons">
+                    <i class="fab fa-python"></i>
+                    <img
+                      src="assets/Icons/scikit-learn.png"
+                      style="height: 30px"
+                    />
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/PLCoster/cs50ai-week4-shopping"
+                        class="btn btn-primary my-2"
+                        ><i class="fab fa-github"></i> Source Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <hr>
-            <h2>Neural Networks</h2>
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card mb-4 shadow-sm">
-                  <img src="assets/Projects/cs50ai/traffic.png" class="card-img-top" alt="CS50 AI Traffic Image">
-                  <div class="card-body">
-                    <h3 class="card-title">Traffic</h3>
-                    <p class="card-text">An AI that identifies which traffic sign appears in a photograph, using a TensorFlow convolutional neural network.</p>
-                    <br>
-                    <p class="tech-icons"><i class="fab fa-python"></i> <img src="assets/Icons/tensorflow.png" style="height: 30px;"></p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="https://github.com/PLCoster/cs50ai-week5-traffic" class="btn btn-primary my-2"><i class="fab fa-github"></i>  Source Code </a>
-                      </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="assets/Projects/cs50ai/nim.png"
+                  class="card-img-top"
+                  alt="CS50 AI Nim Image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Nim</h3>
+                  <p class="card-text">
+                    An AI that teaches itself to play the game 'Nim' using
+                    Reinforcement Learning. A Q-Learning algorithm with ε-Greedy
+                    Decision Making is used to estimate the value of actions for
+                    game states.
+                  </p>
+                  <p class="tech-icons"><i class="fab fa-python"></i></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/PLCoster/cs50ai-week4-nim"
+                        class="btn btn-primary my-2"
+                        ><i class="fab fa-github"></i> Source Code
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
+          <hr />
+          <h2>Neural Networks</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="assets/Projects/cs50ai/traffic.png"
+                  class="card-img-top"
+                  alt="CS50 AI Traffic Image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Traffic</h3>
+                  <p class="card-text">
+                    An AI that identifies which traffic sign appears in a
+                    photograph, using a TensorFlow convolutional neural network.
+                  </p>
+                  <br />
+                  <p class="tech-icons">
+                    <i class="fab fa-python"></i>
+                    <img
+                      src="assets/Icons/tensorflow.png"
+                      style="height: 30px"
+                    />
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/PLCoster/cs50ai-week5-traffic"
+                        class="btn btn-primary my-2"
+                        ><i class="fab fa-github"></i> Source Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <h2>Language</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="assets/Projects/cs50ai/parser.png"
+                  class="card-img-top"
+                  alt="CS50 AI Parser Image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Parser</h3>
+                  <p class="card-text">
+                    An AI that can parse sentences and extract noun phrases,
+                    using the context-free grammar formalism and the Python nltk
+                    library.
+                  </p>
+                  <br />
+                  <p class="tech-icons">
+                    <i class="fab fa-python"></i> <strong>NLTK</strong>
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/PLCoster/cs50ai-week6-parser"
+                        class="btn btn-primary my-2"
+                        ><i class="fab fa-github"></i> Source Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <hr>
-            <h2>Language</h2>
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card mb-4 shadow-sm">
-                  <img src="assets/Projects/cs50ai/parser.png" class="card-img-top" alt="CS50 AI Parser Image">
-                  <div class="card-body">
-                    <h3 class="card-title">Parser</h3>
-                    <p class="card-text">An AI that can parse sentences and extract noun phrases, using the context-free grammar formalism and the Python nltk library.</p>
-                    <br>
-                    <p class="tech-icons"><i class="fab fa-python"></i> <strong>NLTK</strong></p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="https://github.com/PLCoster/cs50ai-week6-parser" class="btn btn-primary my-2"><i class="fab fa-github"></i>  Source Code </a>
-                      </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="assets/Projects/cs50ai/questions.png"
+                  class="card-img-top"
+                  alt="CS50 AI Parser Image"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Questions</h3>
+                  <p class="card-text">
+                    An AI that answers questions, by determining the most
+                    relevant document(s) using tf-idf ranking and then
+                    extracting the most relevant sentence(s) using idf and a
+                    query term density measure.
+                  </p>
+                  <p class="tech-icons">
+                    <i class="fab fa-python"></i> <strong>NLTK</strong>
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="https://github.com/PLCoster/cs50ai-week6-questions"
+                        class="btn btn-primary my-2"
+                        ><i class="fab fa-github"></i> Source Code
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card mb-4 shadow-sm">
-                  <img src="assets/Projects/cs50ai/questions.png" class="card-img-top" alt="CS50 AI Parser Image">
-                  <div class="card-body">
-                    <h3 class="card-title">Questions</h3>
-                    <p class="card-text">An AI that answers questions, by determining the most relevant document(s) using tf-idf ranking and then extracting the most relevant sentence(s) using idf and a query term density measure.</p>
-                    <p class="tech-icons"><i class="fab fa-python"></i> <strong>NLTK</strong></p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="https://github.com/PLCoster/cs50ai-week6-questions" class="btn btn-primary my-2"><i class="fab fa-github"></i>  Source Code </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
-
           </div>
         </div>
+      </div>
+    </main>
 
-      </main>
+    <!--Footer-->
 
-      <!--Footer-->
-
-      <footer class="navbar fixed-bottom" id="footer">
-          <span class="footer_text">&copy; 2020 P.L.Coster</span>
-      </footer>
+    <footer class="navbar fixed-bottom" id="footer">
+      <span class="footer_text">&copy; 2020 P.L.Coster</span>
+    </footer>
 
     <!-- Optional Bootstrap JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
